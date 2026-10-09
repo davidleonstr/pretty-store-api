@@ -3,7 +3,6 @@
 API REST de **Pretty Store**, una tienda de reservas con retiro en persona (sin envíos ni pago en línea).
 Construida con **Flask + PostgreSQL**, SQL explícito con SQLAlchemy Core (sin ORM).
 
-- Despliegue en producción: ver [`DEPLOY.md`](./DEPLOY.md).
 - Zona horaria del negocio: `America/El_Salvador` (UTC-6). Precios en **centavos de USD** (enteros).
 
 ## Requisitos
@@ -16,7 +15,7 @@ Construida con **Flask + PostgreSQL**, SQL explícito con SQLAlchemy Core (sin O
 ## Puesta en marcha (desarrollo)
 
 ```bash
-cd backend
+cd pretty-store-api
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
@@ -52,7 +51,7 @@ Se leen del entorno o de un archivo `.env` en `backend/`.
 ## Estructura
 
 ```
-backend/
+pretty-store-api/
 ├─ wsgi.py              # punto de entrada (app = create_app())
 ├─ schema.sql           # esquema PostgreSQL: fuente de verdad de la BD
 ├─ app/
