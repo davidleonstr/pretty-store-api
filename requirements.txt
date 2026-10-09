@@ -1,0 +1,11 @@
+Flask>=3.0,<4
+psycopg[binary,pool]>=3.1
+SQLAlchemy>=2.0
+flask-jwt-extended>=4.6
+argon2-cffi>=23.1
+flask-cors>=4.0
+flask-limiter>=3.5
+Pillow>=10.3
+gunicorn>=22.0
+pytest>=8.0
+python-dotenv>=1.0
